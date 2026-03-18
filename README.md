@@ -1,30 +1,63 @@
-# ai-shopping-agent
+# Ai Shopping Agent
 
-**AI personal shopping assistant with price tracking**
+AI personal shopping assistant with price tracking
 
-## Install
+## Features
+
+- Agent
+Api
+Database
+Price Tracker
+Recommender
+Review Analyzer
+Scraper
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/ai-shopping-agent.git
+cd ai-shopping-agent
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **agent**
-- **scraper**
-- **review_analyzer**
-- **recommender**
-- **price_tracker**
-- **database**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-shopping-agent/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
