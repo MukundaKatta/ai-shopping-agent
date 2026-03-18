@@ -1,63 +1,43 @@
-# Ai Shopping Agent
+# ai-shopping-agent
 
-AI personal shopping assistant with price tracking
+**AI shopping assistant that finds deals, compares products, and tracks prices**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Agent
-Api
-Database
-Price Tracker
-Recommender
-Review Analyzer
-Scraper
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/ai-shopping-agent.git
-cd ai-shopping-agent
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import AiShoppingAgent
+ instance = AiShoppingAgent()
+r = instance.search(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `search()` | Search |
+| `index()` | Index |
+| `rank()` | Rank |
+| `filter()` | Filter |
+| `get_suggestions()` | Get suggestions |
+| `export_results()` | Export results |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-ai-shopping-agent/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
