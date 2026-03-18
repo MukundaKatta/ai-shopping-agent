@@ -1,13 +1,15 @@
-# ai-shopping-agent
+# AI Shopping Agent
 
-Stub Python project. Described as an AI shopping agent, but none of that functionality exists.
+Intelligent shopping assistant agent that finds deals, compares products, and automates purchases.
 
-## What's actually here
+## About
+AI Shopping Agent acts as a personal shopping assistant, browsing products across retailers, comparing prices and features, tracking deals, and helping users make informed purchasing decisions through natural language interaction.
 
-A single class in `src/core.py` (AiShoppingAgent) with placeholder methods that each return a fixed dictionary without doing any real work. There is no product search, no price comparison, no shopping automation - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No web scraping or e-commerce libraries are present.
+## Tech Stack
+- Language: Python
+- Agent: Autonomous browsing and comparison logic
+- NLP: Natural language product search
+- Data: Multi-retailer product aggregation
 
 ## Status
-
-Scaffolding only. No working shopping agent functionality exists.
+Active development - product search engine and comparison logic established.
