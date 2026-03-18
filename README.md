@@ -1,41 +1,13 @@
 # ai-shopping-agent
 
-**AI shopping assistant that finds deals, compares products, and tracks prices**
+Stub Python project. Described as an AI shopping agent, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (AiShoppingAgent) with placeholder methods that each return a fixed dictionary without doing any real work. There is no product search, no price comparison, no shopping automation - just stubs.
 
-## Quick Start
-```python
-from src.core import AiShoppingAgent
- instance = AiShoppingAgent()
-r = instance.search(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No web scraping or e-commerce libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `search()` | Search |
-| `index()` | Index |
-| `rank()` | Rank |
-| `filter()` | Filter |
-| `get_suggestions()` | Get suggestions |
-| `export_results()` | Export results |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working shopping agent functionality exists.
